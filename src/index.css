@@ -5,9 +5,520 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* width: 100vw; */
+  
 }
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.links{
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  /* padding-left: 15px; */
+}
+.links:hover{
+  cursor: pointer;
+}
+
+#brand{
+  color: white;
+/* margin-left:40px;} */}
+.divider{
+  position: relative;
+  margin: 9px 2px 3px 16px;
+    border-right: 0.2px;
+    border-left: 0.2px;
+    border-top: 25px;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: rgba(241, 239, 239, 0.9);
+    height: 2.5vh;
+}
+
+
+.navbar-toggler-icon{
+  background-color: white;
+  border: none;
+}
+/* @media screen and(max-width:206px) {
+  .display{
+    width: 100vw;
+    line-height:4;
+  }
+  
+} */
+
+
+#one{
+  position: relative;
+  left: 400px;
+}
+#two{
+  position: relative;
+  left: 400px;
+}
+#icon{
+  position: relative;
+  left: 400px;
+}
+#three{
+  position: relative;
+  left: 400px;
+}
+#four{
+  position: relative;
+  left: 400px;
+}
+/* .mynav{
+  position: relative;
+  left: 100px;
+  
+} */
+.myhead{
+  background-color:#2b2d42;
+  padding: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+min-height: 100vh;
+
+display: block;
+align-items: center;
+justify-content: center;
+}
+.site-footer {
+background-color: #26272b;
+padding: 45px 0 20px;
+font-size: 15px;
+line-height: 24px;
+color: #737373;
+box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.site-footer hr {
+border-top-color: #bbb;
+opacity: 0.5;
+}
+.site-footer hr.small {
+margin: 20px 0;
+}
+.site-footer h6 {
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+margin-top: 5px;
+letter-spacing: 2px;
+}
+.site-footer a {
+color: #737373;
+}
+.site-footer a:hover {
+color: #fff;
+text-decoration: none;
+}
+.footer-links {
+padding-left: 0;
+list-style: none;
+}
+.footer-links li {
+display: block;
+}
+.footer-links a {
+color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+color: #fff;
+text-decoration: none;
+}
+.site-footer .social-icons {
+text-align: right;
+}
+.site-footer .social-icons a {
+width: 40px;
+height: 40px;
+line-height: 40px;
+margin-left: 6px;
+margin-right: 0;
+border-radius: 100%;
+background-color: #33353d;
+}
+.copyright-text {
+margin: 0;
+}
+@media (max-width: 991px) {
+.site-footer [class^="col-"] {
+margin-bottom: 30px;
+}
+}
+@media (max-width: 767px) {
+.site-footer {
+padding-bottom: 0;
+}
+.site-footer .copyright-text,
+.site-footer .social-icons {
+text-align: center;
+}
+}
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #f60838;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-icons i:hover {
+  background: #f60838;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.app{
+  display:grid;
+  padding-left: 5%;
+
+  
+}
+.img-container{
+ overflow: hidden;
+ display:flex;
+font-size: 30px;
+border-radius: 50px;
+border: solid 1px black;
+margin:10px;
+
+}
+.img-container img{
+  width: 600px;
+  transition: transform 0.3s;
+  border: solid 1px blue;
+ 
+  
+ 
+}
+.img-container img:hover{
+  transform: scale(1.5);
+}
+.row{
+  border-radius: 10px;
+  align-items:center;
+}
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+} */
+
+/* .news-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+}
+
+.news-card h2 {
+  color: #333;
+}
+
+.news-card a {
+  color: #007bff;
+  text-decoration: none;
+} */
+
+  
+
+/* Top.css */
+
+/* Ensure the carousel is responsive */
+.carousel {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Adjust the width and height of the images within the carousel */
+.carousel-item img {
+  width: 100%; /* Set the width to 100% */
+  height: 30em; /* Ensure the aspect ratio is maintained */
+}
+
+/* Optional: Adjust the container's padding for better spacing on small screens */
+.container {
+  padding: 1rem;
+}
+
+/* google */
+/* src/components/News.css */
+
+/* .news-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.news-description {
+  color: pink;
+} */
+
+/* temporary */
+/* src/styles.css */
+/* ... (existing styles) */
+
+/* .login-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Adjust margin as needed */
+ */
+ 
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+} */
+
+/* .buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* .login {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.signup {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.news-updates {
+  margin-top: 20px;
+} */
+
+/* .news-updates h2 {
+  color: #333;
+} */
+
+
+/* signup */
+/*  */
+.headers{
+  justify-content: center;
+  
+  
+  
+}
+.containers{
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  box-shadow:-1px -1px 10px rgba(0,0,0,.5);
+  background:#fff;
+  margin:auto;
+  margin-bottom:20px;
+  margin-top: 20px;
+  border-radius:10px;
+  overflow:hidden;
+  width:410px;
+  /* background-color: white;
+  width:30rem;
+  height:35rem;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0.188em 1.550em rgba(156,156,156);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; */
+
+
+  
+  
+}
+.texts{
+  color: #3c009d;
+  font-size: 35px;
+  font-weight: 700;
+}
+.inputs{
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 380px;
+  height:60px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+.inputs input{
+  height:30px;
+  width:100%;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 19px;
+  padding: 20px;
+}
+.inp{
+  height:30px;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.submits{
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 39px;
+  justify-content: center;
+  color: #fff;
+  background: #3c009d;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+
+
+
+
+/* webpage */
+/* App.css */
+
+
+.app-containers {
+  text-align: center;
+}
+
+.headers {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.background-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust overlay color and opacity */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-titles {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.button-containers {
+  display: flex;
+}
+
+.buttons {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.buttons:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+
+@media (max-width: 600px) {
+  .headers {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .header-titles{
+    font-size: 1.5em;
+  }
+}
+.p-3:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+  width: '22rem';
+  height:"40rem";
+  box-Shadow:"2px 2px 10px silver";
+  border-radius:"10px"
+
+}
+.img-fluid{
+  width:"100%";
+  height:"200px";
+  object-fit:"cover"
+
 }
