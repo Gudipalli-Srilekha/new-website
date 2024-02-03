@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 
-function Signup() {
+function Signup({onSignup}) {
   const navigate = useNavigate();
   const Nameref = useRef(null);
   const Emailref = useRef(null);
@@ -28,6 +28,7 @@ function Signup() {
     } else if (passwordref.current.value.trim() === "") {
       setValidationMessage("Please enter a valid password.");
     } else {
+      onSignup();
       axios
         .post("http://127.0.0.1:3006/Register", newuser)
         .then((res) => {
@@ -43,6 +44,7 @@ function Signup() {
           setValidationMessage("Registration failed. Please try again later.");
         });
     }
+    
   };
 
   const handlenavi = () => {

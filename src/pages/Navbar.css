@@ -1,0 +1,235 @@
+/* Navbar styles */
+
+/* Common styles */
+#navbar{
+    background-color: #000;
+    }
+    .nav-wrapper {
+      margin: auto;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      /* margin-top: 20px; */
+    
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: rgb(13, 26, 38);
+      margin-left: 28px;
+      margin-right: auto;
+      height: 60px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .logo-img {
+      width: 100px;
+      height: 65px;
+    }
+    
+    #navbar ul {
+      list-style: none;
+      text-align: center;
+      margin-top: -2px;
+    }
+    
+    #navbar li {
+      display: inline-block;
+    }
+    
+    #navbar li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      margin: 26px 10px;
+      padding: 0 5px;
+      font-size: 1.3rem;
+      height: 50px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+    
+    #navbar li a:hover {
+      color: #A88463;
+    }
+    #navbar li a::before,
+    #navbar li a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background:#A88463;
+      transition: all 0.5s ease;
+    }
+    #navbar li a::before {
+      right: 50%;
+    }
+    
+    #navbar li a:after {
+      left: 50%;
+      background: #A88463;
+    }
+    
+    #navbar li a:hover::before,
+    #navbar li a:hover:after {
+      width: 50%;
+    }
+    
+    #navbar li a:hover::before {
+      right: 0;
+    }
+    
+    #navbar li a:hover:after {
+      left: 0;
+    }
+    
+    /* Mobile view styles */
+    .menuIcon {
+      cursor: pointer;
+      display: none;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      height: 23px;
+      width: 27px;
+      z-index: 1200;
+    }
+    
+    .Icon-bars {
+      background:#fff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 30px;
+      height: 3px;
+      transition: all 0.5s ease;
+    }
+    
+    .Icon-bars::before,
+    .Icon-bars::after {
+      background: #fff;
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      transition: all 0.5s ease;
+    }
+    
+    .Icon-bars::before {
+      top: -8px;
+    }
+    
+    .Icon-bars::after {
+      bottom: -8px;
+    }
+    
+    .menuIcon.toggle .Icon-bars {
+      background: transparent;
+    }
+    
+    .menuIcon.toggle .Icon-bars::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    
+    .menuIcon.toggle .Icon-bars::after {
+      transform: rotate(45deg);
+      bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-wrapper {
+        width: 90%;
+      }
+    
+      .logo {
+        margin-left: 10px;
+      }
+    
+      #navbar ul {
+        text-align: center;
+      }
+    
+      #navbar li a {
+        margin: 0 8px;
+        padding: 0 3px;
+        font-size: 1.2rem;
+      }
+    
+      .menuIcon {
+        display: block;
+      }
+    }
+    
+    /* Responsive mobile view */
+    #menu {
+      display: none;
+    }
+    
+    .mobile-menu {
+      display: block !important;
+    }
+    
+    .overlay-menu {
+      background: lightblue;
+      color: rgb(13, 26, 38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-out;
+      transform: translateX(100%);
+    }
+    
+    .overlay-menu ul,
+    .overlay-menu li {
+      display: block;
+      position: relative;
+    }
+    
+    .overlay-menu li a {
+      display: block;
+      font-size: 1.8rem;
+      letter-spacing: 4px;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    
+    .overlay-menu li a:hover,
+    .overlay-menu a:active {
+      color: rgb(28, 121, 184);
+    }
+    
+    /* Show the menu for larger screens */
+    @media (min-width: 769px) {
+      #menu {
+        display: block;
+      }
+    
+      .mobile-menu {
+        display: none;
+      }
+    }
+    .logout-btn a {
+      cursor : pointer ;
+      
+      font-style: italic;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+    }
